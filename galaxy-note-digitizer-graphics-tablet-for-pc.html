@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Galaxy Note as digitizer or graphics tablet for PC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+
+  <style>
+    body {
+      background-color: #efefef;
+      color: #505050;
+      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+      font-weight: 200;
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 720px;
+    }
+
+    article {
+      background-color: white;
+      border-radius: 1px;
+      box-shadow: 0px 2px 2px 1px rgba(0, 0, 0, 0.08);
+      font-size: 1.1em;
+      margin: 16px 8px;
+      overflow: hidden;
+      padding: 15px 15px;
+    }
+
+    b, h1, h2, h3, h4, h5 {
+      font-weight: 400;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    iframe {
+      width: 100%;
+      height: 315px;
+    }
+  </style>
+</head>
+
+<body>
+  <article>
+    <h3>Use Galaxy Note as digitizer or graphics tablet for PC</h3>
+
+    <h4>Demo</h4>
+    <div style="text-align:center;">
+      <iframe src="http://www.youtube.com/embed/J_JeueI7aLE" frameborder="0" allowfullscreen=allowfullscreen></iframe>
+    </div>
+    <h4>About</h4>
+    <ul>
+      <li>This was a small weekend project / the proof of concept for using Galaxy Note as a graphics tablet for PC</li>
+      <li>Input information is sent via UDP (by default if no IP address is specified data simply broadcasted)</li>
+      <li>It was tested in local network using WiFi</li>
+      <li>This app utilizes pen hover event to work more like usual digitizer tablet. Click down and up events happen when pen touches and is lifted off the screen</li>
+      <li>Works on Galaxy Note with ICS</li>
+      <li>At this point this solution only triggers mouse events without any pressure information. (hopefully I'll come with some ideas to emulate the pressure)</li>
+      <li>Finger touch, movements and hover only moves cursor without actualy drawing</li>
+      <li>There is a bug with orientation change so you must start S-Pen Digitizer in desired orientation</li>
+    </ul>
+    <h4>Installation</h4>
+    <ol>
+      <li>Download <a href="https://github.com/artursgirons/spen-digitizer/raw/master/deployment/SPenClient.exe">Windows client</a> (.exe (.Net application) for Windows and <a href="https://github.com/artursgirons/spen-digitizer/raw/master/deployment/SPenDigitizer.apk">Android app</a>        for Galaxy Note)</li>
+      <li>Install SPenDigitizer.apk on Galaxy Note</li>
+      <li>Launch SPenClient.exe on Windows (Windows will ask you to allow access to Network - you should allow)</li>
+      <li>Launch S-Pen Digitizer on your Note</li>
+      <li>It should work by default, but for better performance you can change Host IP (in android app options) to point directly to your Windows machine</li>
+    </ol>
+    <h4>Download</h4>
+    <ul>
+      <li><a href="https://github.com/artursgirons/spen-digitizer/raw/master/deployment/SPenDigitizer.apk">Android app</a></li>
+      <li><a href="https://github.com/artursgirons/spen-digitizer/raw/master/deployment/SPenClient.exe">Windows client</a></li>
+    </ul>
+    <h4>Source code</h4>
+    <ul>
+      <li><a target="_blank" href="https://github.com/artursgirons/spen-digitizer/">Github</a></li>
+    </ul>
+  </article>
+</body>
+
+</html>
