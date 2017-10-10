@@ -1,2 +1,4 @@
 User-agent: *
 Disallow: /spreadsheet-as-db/
+Disallow: /sveika
+Disallow: /sveika.html
